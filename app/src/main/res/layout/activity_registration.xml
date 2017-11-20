@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.zengersoong.fastoutalpha.RegistrationActivity">
+    tools:context="com.example.zengersoong.fastoutalpha.RegistrationActivity">  <TextView
+    android:id="@+id/nameprompt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="26dp"
+    android:layout_marginStart="26dp"
+    android:layout_marginTop="56dp"
+    android:textSize="18sp"
+    android:text="@string/namePrompt" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameprompt"
+        android:layout_alignStart="@+id/nameprompt"
+        android:layout_alignLeft="@id/nameprompt"
+        android:inputType="textPersonName"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        />
+
+    <TextView
+        android:id="@+id/emailPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regName"
+        android:layout_alignLeft="@id/regName"
+        android:layout_alignStart="@id/regName"
+        android:text="@string/Email"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/emailPrompt"
+        android:layout_alignLeft="@id/regName"
+        android:layout_alignStart="@id/regName"
+        android:layout_alignEnd="@id/regName"
+        android:inputType="textEmailAddress"
+        android:layout_alignRight="@id/regName"/>
+
+    <TextView
+        android:id="@+id/passwordPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regEmail"
+        android:layout_alignLeft="@id/regName"
+        android:layout_alignStart="@id/regName"
+        android:text="@string/Password"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/regPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/passwordPrompt"
+        android:layout_alignLeft="@id/regName"
+        android:layout_alignStart="@id/regName"
+        android:inputType="textPassword"
+        android:layout_alignEnd="@id/regName"
+        android:layout_alignRight="@id/regName"/>
+    <TextView
+        android:id="@+id/CpasswordPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regPassword"
+        android:layout_alignLeft="@id/regName"
+        android:layout_alignStart="@id/regName"
+        android:text="@string/CPassword"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/CregPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/CpasswordPrompt"
+        android:layout_alignLeft="@id/regName"
+        android:layout_alignStart="@id/regName"
+        android:inputType="textPassword"
+        android:layout_alignEnd="@id/regName"
+        android:layout_alignRight="@id/regName"/>
+    <TextView
+        android:id="@+id/PromptID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CregPassword"
+        android:textSize="18sp"
+        android:layout_alignLeft="@id/regName"
+        android:layout_alignStart="@id/regName"
+        android:text="@string/ID"
+        />
+    <EditText
+        android:id="@+id/regID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PromptID"
+        android:layout_alignEnd="@id/regName"
+        android:layout_alignRight="@id/regName"
+        android:inputType="textVisiblePassword"
+        android:layout_alignLeft="@id/regName"
+        android:layout_alignStart="@id/regName"/>
+    <Button
+        android:id="@+id/regBut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regID"
+        android:layout_alignLeft="@id/regID"
+        android:layout_alignStart="@id/regID"
+        android:layout_alignEnd="@id/regID"
+        android:layout_alignRight="@id/regID"
+        android:text="@string/Register"/>
+
+</RelativeLayout>

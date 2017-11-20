@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FastOutAlpha</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="CPassword">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="SignUp">No Account? Sign Up with us!</string>
+    <string name="namePrompt">Full Name</string>
+    <string name="ID">NRIC</string>
+    <string name="Register">Register</string>
 </resources>

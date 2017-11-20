@@ -128,7 +128,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     private void onAuthSuccess() {
 
-        // Write new user
+        
         writeNewUser(Name.getText().toString(), Email.getText().toString(), Pass.getText().toString(), IC.getText().toString());
 
         // Go to MainActivity
